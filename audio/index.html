@@ -1,0 +1,26 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Go WebAssembly Example</title>
+    <script src="wasm_exec.js"></script>
+</head>
+<body>
+		    <script src="wasm_exec.js"></script>
+    <script>
+        const go = new Go();
+        WebAssembly.instantiateStreaming(fetch("main.wasm"), go.importObject).then((result) => {
+            go.run(result.instance);
+
+            // Example usage of the Go function in JavaScript
+            // let sum = add(5, 3);
+            console.log("are we playing audio yet ...");
+            synth_audio_write_wav_file_play_wav();
+            console.log("... back now from playing audio");
+        });
+    </script>
+</body>
+</html>
+
+
