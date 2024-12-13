@@ -1,9 +1,17 @@
-# turmeric
-golang webassembly experiments
+# ...  golang webassembly experiments
 
 # ... prerequisites
 
 you need to have golang installed on your machine
+
+
+# ... outline
+
+below steps will create a simple webassembly program in golang
+which is called from javascript in browser
+
+after running below steps you will see 5 + 3 = 8 in browser console
+to confirm that golang code is being called from javascript in browser
 
 
 # ...  golang webassembly which will execute in browser
